@@ -1,6 +1,7 @@
+@import "normalize.css";
 :root {
   --text-color-light: #d9d9d9;
-	--text-color-dark: #404040;
+  --text-color-dark: #404040;
 }
 html,
 body {
@@ -12,4 +13,8 @@ body {
 }
 * {
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
