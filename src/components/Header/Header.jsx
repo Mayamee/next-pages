@@ -1,21 +1,34 @@
-import Image from "next/image";
-import Link from "next/link";
+import Link from 'next/link';
+import Image from 'next/image';
 
-const Header = () => {
+export const Header = () => {
   return (
     <header>
-      <div className="container">
-        <div className="logo">
-          <Image src={"/images/logo_black.png"} width={50} height={50} alt="Logo" />
+      <div>
+        <div className="topNav">
+          <Image alt="logo" src={'/images/logo_black.png'} width={50} height={50} />
+          <nav>
+            <ul>
+              <li>
+                <Link href="/" passHref>
+                  <a> Home</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/events" passHref>
+                  <a> Events</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about-us" passHref>
+                  <a> About us</a>
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <Link href="/events">Events</Link>
-          <Link href="/">Home</Link>
-          <Link href="/about">About us</Link>
-        </nav>
+        <p className="title"> Sed ut perspiciatis unde omnis</p>
       </div>
     </header>
   );
 };
-
-export default Header;
