@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "@/styles/globals.sass";
 import MainLayout from "@/src/components/Layout/MainLayout";
 import Head from "next/head";
 

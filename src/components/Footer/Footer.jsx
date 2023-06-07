@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <footer>Time to Code - A project of events.</footer>;
+  return <footer>© 2022 Time to Code - A Project Built with Next.js</footer>;
 };
 
 export default Footer;
